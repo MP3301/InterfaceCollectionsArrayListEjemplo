@@ -37,6 +37,29 @@ public class ApiDeColecciones {
         miLista.add("Sabado");
         miLista.add("Domingo");
         
+        
+        //usando hashmap
+        
+        
+        Map miMapa = new HashMap<>();
+        miMapa.put("valor1", "Pancho");
+        miMapa.put("valor2", "Carla");
+        miMapa.put("valor3", "Rosa");
+        
+        
+        
+        //regresa el elemento del key usado
+        String elemento = (String) miMapa.get("valor1");
+        
+        
+        System.out.println("elemento="+elemento);
+        
+        //KeySet  ..  retorna valores sin orden
+        
+        System.out.println("Keyset retorna valores sin orden");
+        System.out.println(miMapa.keySet());
+                
+                
         for (Object object : miLista) {
             System.out.println("Valor="+object);
         }
